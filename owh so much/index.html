@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A Special Surprise for Shelly ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-page="1">
+
+    <div id="luxury-ambient-container">
+        <canvas id="goldDustCanvas"></canvas>
+        <div class="velvet-vignette"></div>
+    </div>
+
+    <div id="gold-music-deck" class="luxe-card music-player">
+        <div class="player-core">
+            <span class="gold-icon-glow">🎵</span>
+            <div class="track-meta">
+                <p class="gold-text-accent letter-spaced">Bday Track</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="luxe-play-btn"><i class="fas fa-play"></i></button>
+            <input type="range" id="luxe-volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+      <audio id="luxe-audio-engine" src="assets/song.mp3" loop></audio>
+    </div>
+
+    <div id="luxe-progress-hud">PART 1 OF 4</div>
+
+    <main id="view-viewport" class="luxe-fade-in">
+        <section class="viewport-page">
+            
+            <div class="top-greeting letter-spaced">✨ Happy Birthday Shelly! ✨</div>
+
+            <div class="envelope-wrapper" id="invitation-envelope">
+                <div class="wax-seal-button" onclick="unpackRoyalInvitation(event)">
+                    <div class="seal-inner-emblem">👑</div>
+                </div>
+                <div class="tap-hint-text">👇 Tap on the crown princess to open it! 👇</div>
+                
+                <div class="luxe-card invitation-card gold-border-glow">
+                    <h1 class="royal-title letter-spaced">Hey Shelly!</h1>
+                    <div class="gold-divider"></div>
+                    
+                    <p class="luxe-paragraph">
+                        Welcome to your secret digital hideout! Made with lots of pink, shiny gold, and best memories just for you.
+                    </p>
+
+                    <div class="luxe-countdown-matrix" id="chronograph-display">
+                        <div class="chrono-unit"><span id="days">00</span><p>DAYS</p></div>
+                        <div class="chrono-unit"><span id="hours">00</span><p>HOURS</p></div>
+                        <div class="chrono-unit"><span id="minutes">00</span><p>MINS</p></div>
+                        <div class="chrono-unit"><span id="seconds">00</span><p>SECS</p></div>
+                    </div>
+
+                    <button class="gold-premium-btn portal-btn letter-spaced" onclick="burstGoldConfettiThenNavigate(event, 'page2.html')">
+                        Let's see the photos! ➔
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    ........your page content........
+
+    <!-- Music Player -->
+    <audio id="luxe-audio-engine" preload="auto">
+        <source src="assets/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="luxe-play-btn">
+        <i class="fas fa-play"></i>
+    </button>
+
+    <input 
+    id="luxe-volume" 
+    type="range" 
+    min="0" 
+    max="1" 
+    step="0.01" 
+    value="0.5">
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

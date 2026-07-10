@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The Arcade Lounge ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-page="3">
+
+    <div id="luxury-ambient-container">
+        <canvas id="goldDustCanvas"></canvas>
+        <div class="velvet-vignette"></div>
+    </div>
+
+    <div id="gold-music-deck" class="luxe-card music-player">
+        <div class="player-core">
+            <span class="gold-icon-glow">🎵</span>
+            <div class="track-meta">
+                <p class="gold-text-accent letter-spaced">Bday Track</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="luxe-play-btn"><i class="fas fa-play"></i></button>
+            <input type="range" id="luxe-volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+       <audio id="luxe-audio-engine" src="assets/song.mp3" loop></audio>
+    </div>
+
+    <div id="luxe-progress-hud">PART 3 OF 4</div>
+    <div id="luxe-toast-notification" class="luxe-toast hidden"></div>
+
+    <main id="view-viewport" class="luxe-fade-in">
+        <section class="viewport-page">
+            <div class="arcade-zone-container">
+                
+                <header class="luxe-section-header">
+                    <h2 class="royal-title letter-spaced">🎮 THE FUN ZONE 🎮</h2>
+                    <p class="luxe-paragraph">Clear these three quick activities to unlock your special message!</p>
+                </header>
+
+                <div class="luxe-card gold-border-glow arcade-module">
+                    <h3 class="module-title letter-spaced"><i class="fas fa-circle-notch"></i> Spin your Lucky Wheel</h3>
+                    <div class="wheel-wrapper">
+                        <div class="wheel-pointer">▼</div>
+                        <div class="fortune-wheel" id="main-fortune-wheel">
+                            <div class="wheel-segment" style="transform: rotate(0deg);"><p>Best Smile</p></div>
+                            <div class="wheel-segment" style="transform: rotate(60deg);"><p>Free Hug</p></div>
+                            <div class="wheel-segment" style="transform: rotate(120deg);"><p>Treat Time</p></div>
+                            <div class="wheel-segment" style="transform: rotate(180deg);"><p>Big Wish</p></div>
+                            <div class="wheel-segment" style="transform: rotate(240deg);"><p>Queen Vibes</p></div>
+                            <div class="wheel-segment" style="transform: rotate(300deg);"><p>Lucky Day</p></div>
+                            <div class="wheel-center-pin">👑</div>
+                        </div>
+                    </div>
+                    <div class="arcade-controls-center">
+                        <button class="gold-premium-btn inner-btn letter-spaced" id="btn-spin-wheel" onclick="spinRoyalWheel()">Spin it! 🎲</button>
+                    </div>
+                </div>
+
+                <div class="luxe-card gold-border-glow arcade-module">
+                    <h3 class="module-title letter-spaced"><i class="fas fa-star"></i> Catch the Gold Stars</h3>
+                    <div class="star-catch-arena" id="star-game-container">
+                        <canvas id="starGameCanvas"></canvas>
+                        <div class="basket-catcher" id="game-basket">👑</div>
+                        <div class="game-score-overlay">SCORE: <span id="star-score-val">0</span></div>
+                    </div>
+                    <div class="game-slider-track">
+                        <input type="range" id="basket-controller-slider" min="0" max="100" value="50">
+                    </div>
+                    <p class="game-alert-instruction">Slide the slider to catch the falling stars!</p>
+                </div>
+
+                <div class="luxe-card gold-border-glow arcade-module">
+                    <h3 class="module-title letter-spaced"><i class="fas fa-paw"></i> Catch the Running Panda</h3>
+                    <div class="panda-clicker-arena">
+                        <div class="clicker-hud">PANDA TAPS: <span id="panda-click-counter">0</span> / 10</div>
+                        
+                        <div class="panda-track-lane">
+                            <div class="sliding-panda-node" id="target-panda" onclick="handlePandaClick(event)">
+                                <span class="panda-avatar">🐼</span>
+                            </div>
+                        </div>
+
+                        <div class="luxe-victory-banner hidden" id="panda-win-banner">
+                            <p class="victory-message">you can do it gangsterr! 🐼🏆✨</p>
+                        </div>
+                    </div>
+                    <p class="game-alert-instruction">Tap directly on the moving panda 10 times!</p>
+                </div>
+
+                <div class="luxe-action-deck unified-margin">
+                    <button class="gold-premium-btn portal-btn letter-spaced" onclick="burstGoldConfettiThenNavigate(event, 'page4.html')">Go to the Cake! ➔</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

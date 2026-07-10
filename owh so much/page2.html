@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>The Golden Spiral Scroll ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-page="2" id="global-root-node">
+
+    <!-- Premium Golden Fluid Ambient Background Canvas -->
+    <div id="luxury-ambient-container">
+        <canvas id="goldDustCanvas"></canvas>
+        <div class="velvet-vignette"></div>
+    </div>
+
+    <!-- Unified Floating Luxury Audio Controller -->
+    <div id="gold-music-deck" class="luxe-card music-player">
+        <div class="player-core">
+            <span class="gold-icon-glow">✨</span>
+            <div class="track-meta">
+                <p class="gold-text-accent letter-spaced">ROYAL SYMPHONY</p>
+                <p class="track-sub">Ambient Luxury Sound</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button id="luxe-play-btn"><i class="fas fa-play"></i></button>
+            <input type="range" id="luxe-volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+        <audio id="luxe-audio-engine" src="assets/luxury_theme.mp3" loop></audio>
+    </div>
+
+    <div id="luxe-progress-hud">Page 2 of 4</div>
+
+    <!-- Main Content Presentation Layer -->
+    <main id="view-viewport" class="luxe-fade-in">
+        <section class="viewport-page">
+            <div class="spiral-scroll-container">
+                
+                <!-- Section Header -->
+                <header class="luxe-section-header">
+                    <h2 class="royal-title letter-spaced">🌸 THE MEMORY REEL</h2>
+                    <p class="luxe-paragraph letter-spaced">Scroll horizontally through a curated sequence of golden milestones.</p>
+                </header>
+                
+                <!-- Horizontal 3D Spiral Carousel Component -->
+                <div class="luxe-spiral-viewport">
+                    <div class="luxe-spiral-track" id="spiral-track-node">
+                        
+                        <!-- Reel Card 1 -->
+                        <div class="luxe-spiral-card luxe-card gold-border-glow" onclick="burstGoldConfettiFromButton(event)">
+                            <div class="gold-binding-rings">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="luxe-photo-vault">
+                                <img src="assets/photo1.jpg" alt="Memory One" class="luxe-img" onerror="this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=500'">
+                                <div class="gold-overlay-glow"></div>
+                            </div>
+                            <div class="luxe-card-caption">
+                                <p class="caption-text letter-spaced">"A beautiful highlight captured perfectly in time—radiating pure joy and absolute elegance."</p>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 2 -->
+                        <div class="luxe-spiral-card luxe-card gold-border-glow" onclick="burstGoldConfettiFromButton(event)">
+                            <div class="gold-binding-rings">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="luxe-photo-vault">
+                                <img src="assets/photo2.jpg" alt="Memory Two" class="luxe-img" onerror="this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=500'">
+                                <div class="gold-overlay-glow"></div>
+                            </div>
+                            <div class="luxe-card-caption">
+                                <p class="caption-text letter-spaced">"Moments where laughter fills the room, making everything feel infinitely brighter."</p>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 3 -->
+                        <div class="luxe-spiral-card luxe-card gold-border-glow" onclick="burstGoldConfettiFromButton(event)">
+                            <div class="gold-binding-rings">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="luxe-photo-vault">
+                                <img src="assets/photo3.jpg" alt="Memory Three" class="luxe-img" onerror="this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=500'">
+                                <div class="gold-overlay-glow"></div>
+                            </div>
+                            <div class="luxe-card-caption">
+                                <p class="caption-text letter-spaced">"Your incredible presence transforms ordinary settings into unforgettable snapshots."</p>
+                            </div>
+                        </div>
+
+                        <!-- Reel Card 4 -->
+                        <div class="luxe-spiral-card luxe-card gold-border-glow" onclick="burstGoldConfettiFromButton(event)">
+                            <div class="gold-binding-rings">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="luxe-photo-vault">
+                                <img src="assets/photo4.jpg" alt="Memory Four" class="luxe-img" onerror="this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=500'">
+                                <div class="gold-overlay-glow"></div>
+                            </div>
+                            <div class="luxe-card-caption">
+                                <p class="caption-text letter-spaced">"Here is to celebrating your sparkling spirit today, tomorrow, and through every future chapter."</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Page Portal Control Vector -->
+                <div class="luxe-action-deck">
+                    <button class="gold-premium-btn portal-btn letter-spaced" onclick="burstGoldConfettiThenNavigate(event, 'page3.html')">
+                        Enter Arcade Lounge ➔
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
